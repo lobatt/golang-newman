@@ -1,4 +1,4 @@
-FROM golang
-FROM node:9.4-alpine
+FROM golang as builder
 
+FROM node
 RUN npm install -g newman
